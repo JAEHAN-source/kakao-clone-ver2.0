@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b4dd423c8.js" crossorigin="anonymous"></script>
+    <title>Chat | Kakao Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="chats-body">
+    <div class="status-bar">
+        <div class="status-bar__cloumn">
+            <span class="status-bar__clock">1:41</span>
+        </div>
+        <div class="status-bar__cloumn">
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-volume-mute"></i>
+            <span class="status-bar__battery-rate">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__column">
+            <a href="index.html" class="header__back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="header__title">IU</h1>
+        </div>
+        <div class="header__column">
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+    </header>
+    <main class="chats-screen">
+        <ul class="chats__messages">
+            <span class="chats__timestamp">Friday, January 11,2020</span>
+            <li class="incoming__message message">
+                <img src="images/avatar.jpg" class="g-avator message__avator">
+                <div class="message__content">
+                    <span class="message__author">IU</span>
+                    <div class="message_bubble">
+                        Hello!
+                    </div>
+                </div>
+
+            </li>
+            <li class="sending__message message">
+
+                <div class="message__content">
+
+                    <div class="message_bubble">
+                        Hello!
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+
+    </main>
+    <div class="chat__write">
+        <div class="chat__write-column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="chat__write-column">
+            <input type="text" placeholder="send message" class="chat__write-input">
+        </div>
+        <div class="chat__write-column">
+            <span class="chat__write-icon">
+                <i class="far fa-smile"></i>
+            </span>
+            <span class="chat__write-icon">
+                <i class="fas fa-microphone"></i>
+            </span>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

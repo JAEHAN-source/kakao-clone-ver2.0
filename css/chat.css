@@ -1,0 +1,128 @@
+.chat__write{
+    position: fixed;
+    bottom: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6 ;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 0px 20px;
+    border-radius: 40px;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+}
+
+/*은근히 father을 지정잘해줘야지 오류가 안남*/
+
+.chat__write .chat__write-column:nth-child(2){
+    width:90%;
+    
+
+}
+.chat__write .chat__write-column:nth-child(3){
+    display: flex;
+}
+
+.chat__write-input{
+    padding: 20px 10px;
+    width:100%;
+    border: none;
+}
+.chat__write-input:focus{
+    outline: none;
+}
+
+
+.chats-body{
+   
+    margin-left: 0;
+    margin-right: 0;
+
+}
+.chats-body .header,
+.chats-body .status-bar{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+.chats-screen{
+    padding-top: 60px;
+    background-image: url(../images/avatar3.png);
+    min-height: 100vh;
+}
+
+.chats-screen .chats__messages{
+    padding: 0px 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chats-screen .chats__timestamp{
+    background-color: white;
+    font-size: 13px;
+    padding:5px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+
+.message{
+    display: flex;
+    align-items: flex-start;
+    width: 10%;
+}
+.message .message__content{
+    width: 80%;
+}
+
+/*align-self modifies the child of a flex container*/
+
+
+.incoming__message{
+    align-self: flex-start;
+}
+
+
+
+.sending__message{
+    
+    align-self: flex-end;
+}
+
+
+
+.message img{
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.message .message_bubble{
+    background-color: white;
+    padding:10px 10px;
+    border-radius: 20px;
+}
+
+.message .message__author{
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+}
+
+.sending__message .message_bubble{
+    
+    border-bottom-right-radius: 0px;
+}
+
+.incoming__message .message_bubble{
+    border-bottom-left-radius: 0px;
+}
